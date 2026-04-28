@@ -4,6 +4,7 @@ import signIn from "../images/signIn.jpg";
 // import "../App.css";
 import "./login.css";
 import "bootstrap/dist/css/bootstrap.css";
+import API from "../api";
 
 const Login = ({ onLogin }) => {
   // onLogin passed from parent (App.jsx)
@@ -27,7 +28,7 @@ const Login = ({ onLogin }) => {
     e.preventDefault();
 
     try {
-      const res = await fetch("https://weather-dashboard-1-65ts.onrender.com/weather-log/login", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

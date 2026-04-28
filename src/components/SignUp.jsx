@@ -30,7 +30,7 @@ const SignUp = () => {
     }
 
     try {
-      const res = await fetch("https://weather-dashboard-1-65ts.onrender.com/singup", {
+      const res = await fetch("https://weather-dashboard-1-65ts.onrender.com/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
