@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./login.css";
 import signup from "../images/signup.avif"; // Ensure this path is correct
 import { NavLink, useNavigate } from "react-router-dom";
+import API from "../api";
 
 const SignUp = () => {
   const navigate = useNavigate(); // Replace useHistory with useNavigate
@@ -30,7 +31,7 @@ const SignUp = () => {
     }
 
     try {
-      const res = await fetch("https://weather-dashboard-1-65ts.onrender.com/signup", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
