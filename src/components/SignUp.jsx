@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./login.css";
 import signup from "../images/signup.avif"; // Ensure this path is correct
 import { NavLink, useNavigate } from "react-router-dom";
-import API from "../api";
+import API from "../API.js";
 
 const SignUp = () => {
   const navigate = useNavigate(); // Replace useHistory with useNavigate

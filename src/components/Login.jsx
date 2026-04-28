@@ -4,7 +4,7 @@ import signIn from "../images/signIn.jpg";
 // import "../App.css";
 import "./login.css";
 import "bootstrap/dist/css/bootstrap.css";
-import API from "../api";
+import API from "../API.js";
 
 const Login = ({ onLogin }) => {
   // onLogin passed from parent (App.jsx)
